@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="854" height="220" viewBox="0 0 854 220">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#0f1923"/>
+    </linearGradient>
+    <linearGradient id="wg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#0d1117" stop-opacity="0"/>
+      <stop offset="28%"  stop-color="#00d9ff" stop-opacity="0.55"/>
+      <stop offset="72%"  stop-color="#7a00ff" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#0d1117" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="tg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#ffffff"/>
+      <stop offset="55%"  stop-color="#c8e0ff"/>
+      <stop offset="100%" stop-color="#7ab4ff"/>
+    </linearGradient>
+    <linearGradient id="lg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#00d9ff" stop-opacity="0"/>
+      <stop offset="50%"  stop-color="#00d9ff" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#00d9ff" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="gr" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0L0 0 0 40" fill="none" stroke="#ffffff" stroke-width="0.4" stroke-opacity="0.04"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="854" height="220" fill="url(#bg)" rx="10"/>
+  <rect width="854" height="220" fill="url(#gr)" rx="10"/>
+
+  <!-- Wave layer 1 -->
+  <path fill="url(#wg)" opacity="0.20">
+    <animate attributeName="d" dur="14s" repeatCount="indefinite"
+      values="M0 160 Q213 110 427 150 T854 130 L854 220 L0 220Z;
+              M0 130 Q213 170 427 135 T854 160 L854 220 L0 220Z;
+              M0 155 Q213 125 427 165 T854 140 L854 220 L0 220Z;
+              M0 160 Q213 110 427 150 T854 130 L854 220 L0 220Z"/>
+  </path>
+
+  <!-- Wave layer 2 -->
+  <path fill="url(#wg)" opacity="0.30">
+    <animate attributeName="d" dur="20s" repeatCount="indefinite"
+      values="M0 175 Q213 140 427 170 T854 155 L854 220 L0 220Z;
+              M0 148 Q213 182 427 146 T854 178 L854 220 L0 220Z;
+              M0 168 Q213 142 427 173 T854 148 L854 220 L0 220Z;
+              M0 175 Q213 140 427 170 T854 155 L854 220 L0 220Z"/>
+  </path>
+
+  <!-- Animated glowing stroke -->
+  <path fill="none" stroke="url(#wg)" stroke-width="1.8" opacity="0.8">
+    <animate attributeName="d" dur="14s" repeatCount="indefinite"
+      values="M0 160 Q213 110 427 150 T854 130;
+              M0 130 Q213 170 427 135 T854 160;
+              M0 155 Q213 125 427 165 T854 140;
+              M0 160 Q213 110 427 150 T854 130"/>
+  </path>
+
+  <!-- Glow line under title -->
+  <rect x="202" y="173" width="450" height="1.5" fill="url(#lg)" rx="1"/>
+
+  <!-- Title -->
+  <text x="427" y="116"
+    text-anchor="middle"
+    font-family="'Arial Black','Impact','Helvetica Neue',Arial,sans-serif"
+    font-size="76" font-weight="900"
+    fill="url(#tg)"
+    letter-spacing="-1">G-Tunnel</text>
+
+  <!-- Subtitle -->
+  <text x="427" y="158"
+    text-anchor="middle"
+    font-family="'Segoe UI',Arial,sans-serif"
+    font-size="18" font-weight="600"
+    fill="#8b9cb8"
+    letter-spacing="2">by DarkForce &amp; LifeisBrown  •  VLESS + WS + TLS</text>
+</svg>
